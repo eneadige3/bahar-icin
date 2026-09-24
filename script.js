@@ -1,0 +1,2 @@
+window.showScene=(id)=>{const t=document.getElementById(id);if(!t)return;t.classList.remove('hidden');setTimeout(()=>t.scrollIntoView({behavior:'smooth',block:'start'}),40)};
+document.addEventListener('click',e=>{if(e.target.closest('a,button'))return;let h=document.createElement('i');h.className='clickheart';h.textContent='♡';h.style.left=e.clientX+'px';h.style.top=e.clientY+'px';document.body.append(h);setTimeout(()=>h.remove(),800)});
